@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-14T08:22:02 EEST" name="Default suite" finished-at="2022-05-14T08:23:34 EEST" duration-ms="92696">
+  <suite started-at="2022-05-14T23:25:33 EEST" name="Default suite" finished-at="2022-05-14T23:26:32 EEST" duration-ms="59198">
     <groups>
     </groups>
-    <test started-at="2022-05-14T08:22:02 EEST" name="Default test" finished-at="2022-05-14T08:23:34 EEST" duration-ms="92696">
+    <test started-at="2022-05-14T23:25:33 EEST" name="Default test" finished-at="2022-05-14T23:26:32 EEST" duration-ms="59198">
       <class name="Movies.top_movies">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:22:02 EEST" name="setUP" finished-at="2022-05-14T08:22:16 EEST" duration-ms="14900" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:25:33 EEST" name="setUP" finished-at="2022-05-14T23:25:44 EEST" duration-ms="11474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="check_movie_date()[pri:1, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:22:17 EEST" name="check_movie_date" finished-at="2022-05-14T08:22:17 EEST" duration-ms="632" status="FAIL">
+        <test-method signature="check_movie_date()[pri:1, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:25:44 EEST" name="check_movie_date" finished-at="2022-05-14T23:25:45 EEST" duration-ms="381" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [1994-09-23] but found [1994-09-22]]]>
@@ -24,7 +24,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at Movies.top_movies.check_movie_date(top_movies.java:35)
+at Movies.top_movies.check_movie_date(top_movies.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,52 +59,136 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_movie_date -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:22:17 EEST" name="close" finished-at="2022-05-14T08:22:18 EEST" duration-ms="1088" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:25:45 EEST" name="close" finished-at="2022-05-14T23:25:46 EEST" duration-ms="1069" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="setUP()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:22:18 EEST" name="setUP" finished-at="2022-05-14T08:22:32 EEST" duration-ms="13759" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:25:46 EEST" name="setUP" finished-at="2022-05-14T23:25:56 EEST" duration-ms="10530" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="check_movies_list()[pri:2, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:22:32 EEST" name="check_movies_list" finished-at="2022-05-14T08:22:33 EEST" duration-ms="784" status="PASS">
+        <test-method signature="check_movies_list()[pri:2, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:25:56 EEST" name="check_movies_list" finished-at="2022-05-14T23:25:57 EEST" duration-ms="965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_movies_list -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:22:33 EEST" name="close" finished-at="2022-05-14T08:22:34 EEST" duration-ms="916" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:25:57 EEST" name="close" finished-at="2022-05-14T23:25:58 EEST" duration-ms="699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="setUP()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:22:34 EEST" name="setUP" finished-at="2022-05-14T08:22:48 EEST" duration-ms="13833" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:25:58 EEST" name="setUP" finished-at="2022-05-14T23:26:09 EEST" duration-ms="10925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="check_search_movie()[pri:3, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:22:48 EEST" name="check_search_movie" finished-at="2022-05-14T08:22:54 EEST" duration-ms="6024" status="PASS">
+        <test-method signature="check_search_movie()[pri:3, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:26:09 EEST" name="check_search_movie" finished-at="2022-05-14T23:26:10 EEST" duration-ms="953" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-ULMS93P', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}), userDataDir=C:\Users\IONUTS~1\AppData\Local\Temp\scoped_dir10272_2034075645}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:26814}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=101.0.4951.64, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: da9b38f81d86c22696e9cbe53ee87924]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-ULMS93P', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}), userDataDir=C:\Users\IONUTS~1\AppData\Local\Temp\scoped_dir10272_2034075645}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:26814}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=101.0.4951.64, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: da9b38f81d86c22696e9cbe53ee87924
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:156)
+at Movies.top_movies.check_search_movie(top_movies.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_search_movie -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:22:54 EEST" name="close" finished-at="2022-05-14T08:22:54 EEST" duration-ms="532" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:26:10 EEST" name="close" finished-at="2022-05-14T23:26:10 EEST" duration-ms="712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="setUP()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:22:54 EEST" name="setUP" finished-at="2022-05-14T08:23:08 EEST" duration-ms="14404" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:26:10 EEST" name="setUP" finished-at="2022-05-14T23:26:19 EEST" duration-ms="8779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="check_movie_info()[pri:4, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:23:08 EEST" name="check_movie_info" finished-at="2022-05-14T08:23:14 EEST" duration-ms="5814" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="check_movie_info()[pri:4, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:26:19 EEST" name="check_movie_info" finished-at="2022-05-14T23:26:20 EEST" duration-ms="579" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[expected [2018-03-02] but found [2018-03-05]]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-ULMS93P', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}), userDataDir=C:\Users\IONUTS~1\AppData\Local\Temp\scoped_dir14996_1630867891}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:26859}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=101.0.4951.64, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: bc8644452730a0b86aa0fd4daf09f2bf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [2018-03-02] but found [2018-03-05]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at Movies.top_movies.check_movie_info(top_movies.java:102)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-ULMS93P', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}), userDataDir=C:\Users\IONUTS~1\AppData\Local\Temp\scoped_dir14996_1630867891}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:26859}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=101.0.4951.64, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: bc8644452730a0b86aa0fd4daf09f2bf
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+at Movies.top_movies.check_movie_info(top_movies.java:79)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,65 +219,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_movie_info -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:23:14 EEST" name="close" finished-at="2022-05-14T08:23:15 EEST" duration-ms="633" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:26:20 EEST" name="close" finished-at="2022-05-14T23:26:21 EEST" duration-ms="789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="setUP()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:23:15 EEST" name="setUP" finished-at="2022-05-14T08:23:30 EEST" duration-ms="15349" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:26:21 EEST" name="setUP" finished-at="2022-05-14T23:26:31 EEST" duration-ms="10146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="check_search()[pri:5, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:23:30 EEST" name="check_search" finished-at="2022-05-14T08:23:33 EEST" duration-ms="2232" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertFalse(Assert.java:67)
-at org.testng.Assert.assertFalse(Assert.java:77)
-at Movies.top_movies.check_search(top_movies.java:111)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="check_search()[pri:5, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:26:31 EEST" name="check_search" finished-at="2022-05-14T23:26:31 EEST" duration-ms="366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_search -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T08:23:33 EEST" name="close" finished-at="2022-05-14T08:23:34 EEST" duration-ms="1716" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Movies.top_movies@41e1e210]" started-at="2022-05-14T23:26:31 EEST" name="close" finished-at="2022-05-14T23:26:32 EEST" duration-ms="698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

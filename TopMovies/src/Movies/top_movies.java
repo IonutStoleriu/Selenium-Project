@@ -2,6 +2,7 @@
 package Movies;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -20,10 +21,10 @@ public class top_movies {
 		System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://betterqa.ro/top-movies/");
 		driver.findElement(By.id("pwbox-4212")).sendKeys("do_not_share!1");
 		driver.findElement(By.name("Submit")).click();
-		Thread.sleep(3000);
 	}
 	@Test(priority=1)
 	public void check_movie_date() {
@@ -54,7 +55,6 @@ public class top_movies {
 	public void check_search_movie() throws InterruptedException {
 		driver.findElement(By.cssSelector("#root > div > header > div > form > div > input")).sendKeys("Star Trek");
 		driver.findElement(By.cssSelector("#root > div > header > div > form > div > input")).sendKeys(Keys.ENTER);
-		Thread.sleep(5000);
 		List<WebElement> movies=driver.findElements(By.className("jss44"));
 		
 		String displayed_movie="Star Trek: First Contact";
@@ -68,6 +68,7 @@ public class top_movies {
 			String mv=movies.get(i).getText();
 			all_movies.add(mv);
 		}
+		
 		Assert.assertEquals(all_movies.contains(displayed_movie) && !all_movies.contains(undisplayed_movie), true);
 	}
 	@Test(priority=4)
@@ -75,8 +76,6 @@ public class top_movies {
 	{
 		driver.findElement(By.cssSelector("#root > div > header > div > form > div > input")).sendKeys("Tomb Raider");
 		driver.findElement(By.cssSelector("#root > div > header > div > form > div > input")).sendKeys(Keys.ENTER);
-		Thread.sleep(5000);
-		
 		driver.findElement(By.cssSelector("#root > div > div > div:nth-child(1) > div.jss92 > button > span.jss95")).click();
 		
 		String expected_release_date="2018-03-02";
@@ -106,7 +105,6 @@ public class top_movies {
 	public void check_search() throws InterruptedException {
 		driver.findElement(By.cssSelector("#root > div > header > div > form > div > input")).sendKeys("");
 		driver.findElement(By.cssSelector("#root > div > header > div > form > div > input")).sendKeys(Keys.ENTER);
-		Thread.sleep(2000);
 		boolean header=driver.findElements(By.className("mui-fixed")).isEmpty();
 		Assert.assertFalse(header);
 	}

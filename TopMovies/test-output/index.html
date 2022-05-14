@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Ionut Stoleriu\AppData\Local\Temp\testng-eclipse--1526875995\testng-customsuite.xml</span>
+                    <span>C:\Users\Ionut Stoleriu\AppData\Local\Temp\testng-eclipse--163597604\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -114,7 +114,7 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Movies.top_movies" class="method navigator-link" hash-for-method="check_search">check_search</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Movies.top_movies" class="method navigator-link" hash-for-method="check_search_movie">check_search_movie</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -133,7 +133,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Movies.top_movies" class="method navigator-link" hash-for-method="check_search_movie">check_search_movie</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Movies.top_movies" class="method navigator-link" hash-for-method="check_search">check_search</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -166,7 +166,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at Movies.top_movies.check_movie_date(top_movies.java:35)
+	at Movies.top_movies.check_movie_date(top_movies.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -204,14 +204,27 @@
                   <a name="check_movie_info">
                   </a> <!-- check_movie_info -->
                   <span class="method-name">check_movie_info</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [2018-03-02] but found [2018-03-05]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at Movies.top_movies.check_movie_info(top_movies.java:102)
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-ULMS93P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}), userDataDir=C:\Users\IONUTS~1\AppData\Local\Temp\scoped_dir14996_1630867891}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:26859}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=101.0.4951.64, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: bc8644452730a0b86aa0fd4daf09f2bf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Movies.top_movies.check_movie_info(top_movies.java:79)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -246,15 +259,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="check_search">
-                  </a> <!-- check_search -->
-                  <span class="method-name">check_search</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertFalse(Assert.java:67)
-	at org.testng.Assert.assertFalse(Assert.java:77)
-	at Movies.top_movies.check_search(top_movies.java:111)
+                  <a name="check_search_movie">
+                  </a> <!-- check_search_movie -->
+                  <span class="method-name">check_search_movie</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-ULMS93P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}), userDataDir=C:\Users\IONUTS~1\AppData\Local\Temp\scoped_dir10272_2034075645}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:26814}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=101.0.4951.64, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: da9b38f81d86c22696e9cbe53ee87924
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:156)
+	at Movies.top_movies.check_search_movie(top_movies.java:68)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -304,9 +332,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="check_search_movie">
-                  </a> <!-- check_search_movie -->
-                  <span class="method-name">check_search_movie</span>
+                  <a name="check_search">
+                  </a> <!-- check_search -->
+                  <span class="method-name">check_search</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -314,7 +342,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ionut Stoleriu\AppData\Local\Temp\testng-eclipse--1526875995\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Ionut Stoleriu\AppData\Local\Temp\testng-eclipse--163597604\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -365,30 +393,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'check_search_movie')
+data.setCell(0, 1, 'check_movies_list')
 data.setCell(0, 2, 'Movies.top_movies')
-data.setCell(0, 3, 6024);
+data.setCell(0, 3, 965);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'check_movie_info')
+data.setCell(1, 1, 'check_search_movie')
 data.setCell(1, 2, 'Movies.top_movies')
-data.setCell(1, 3, 5814);
+data.setCell(1, 3, 953);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'check_search')
+data.setCell(2, 1, 'check_movie_info')
 data.setCell(2, 2, 'Movies.top_movies')
-data.setCell(2, 3, 2232);
+data.setCell(2, 3, 579);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'check_movies_list')
+data.setCell(3, 1, 'check_movie_date')
 data.setCell(3, 2, 'Movies.top_movies')
-data.setCell(3, 3, 784);
+data.setCell(3, 3, 381);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'check_movie_date')
+data.setCell(4, 1, 'check_search')
 data.setCell(4, 2, 'Movies.top_movies')
-data.setCell(4, 3, 632);
+data.setCell(4, 3, 366);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -423,63 +451,63 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">check_movie_date</span>
-                <span class="method-start">14902 ms</span>
+                <span class="method-start">11476 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">15540 ms</span>
+                <span class="method-start">11869 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">16632 ms</span>
+                <span class="method-start">12941 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">check_movies_list</span>
-                <span class="method-start">30391 ms</span>
+                <span class="method-start">23471 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">31176 ms</span>
+                <span class="method-start">24437 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">32093 ms</span>
+                <span class="method-start">25138 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">check_search_movie</span>
-                <span class="method-start">45926 ms</span>
+                <span class="method-start">36063 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">51951 ms</span>
+                <span class="method-start">37023 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">52484 ms</span>
+                <span class="method-start">37736 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">check_movie_info</span>
-                <span class="method-start">66888 ms</span>
+                <span class="method-start">46515 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">72705 ms</span>
+                <span class="method-start">47099 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">73339 ms</span>
+                <span class="method-start">47889 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">check_search</span>
-                <span class="method-start">88688 ms</span>
+                <span class="method-start">58035 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">90922 ms</span>
+                <span class="method-start">58403 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
