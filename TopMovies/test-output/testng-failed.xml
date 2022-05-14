@@ -5,6 +5,7 @@
     <classes>
       <class name="Movies.top_movies">
         <methods>
+          <include name="check_search"/>
           <include name="setUP"/>
           <include name="close"/>
           <include name="check_movie_date"/>

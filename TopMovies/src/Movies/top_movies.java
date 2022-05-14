@@ -102,6 +102,14 @@ public class top_movies {
 			Assert.assertEquals(info.get(i),expected_info.get(i));
 		}
 	}
+	@Test(priority=5)
+	public void check_search() throws InterruptedException {
+		driver.findElement(By.cssSelector("#root > div > header > div > form > div > input")).sendKeys("");
+		driver.findElement(By.cssSelector("#root > div > header > div > form > div > input")).sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+		boolean header=driver.findElements(By.className("mui-fixed")).isEmpty();
+		Assert.assertFalse(header);
+	}
 	@AfterMethod
 	public void close() {
 		driver.quit();
